@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script async defer src="index.js"></script>
+
+    <style>
+        body{
+            background-color: black;
+            font-family: monospace;
+        }
+        h1{
+            background-color: darkred;
+            color: whitesmoke;
+            display: inline-block;
+            text-align: center;
+        }
+        h2{
+            font-size: 12rem;
+        }
+        span{
+            padding: 0 10px;
+        }
+        textarea{
+            background-color: bisque;
+        }
+        button{
+            color: black;
+            background-color: cadetblue;
+            padding: 1rem 1.5rem;
+            border: none;
+            cursor: pointer;
+        }
+        #ev{
+            background-color: brown;
+        }
+        input{
+            margin-bottom: 1rem;
+            padding: 14px 0;
+            width: 400px;
+        }
+
+        .all{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 6rem;
+        }
+
+        textarea, button, input {
+            border-radius: .5rem;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <div class="btot">
+            <h1><span>Convert text to base64</span></h1>
+            <br>
+            
+                <textarea rows="15" cols="50" id="inpId"></textarea>
+                <br>
+                <button id="eb">Encode</button>
+
+            <form>
+                <input type="text" name="code" id="forCode" />
+                <br>
+            </form>
+        </div>
+
+        <h2>😁</h2>
+
+        <div>
+            <h1><span>Convert base64 to text</span></h1>
+            <br>
+            
+                <textarea rows="15" cols="50" id="inpId2"></textarea>
+                <br>
+                <button id="db">Decode</button>
+
+            <form>
+                <input type="text" name="code" id="forCode2" />
+                <br>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
